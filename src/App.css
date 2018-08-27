@@ -1,0 +1,79 @@
+.card {
+  border: 3px solid #53AB69;
+  background: #F4D8D6;
+  border-radius: 30px;
+  padding: 5%;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-size: 40px;
+  color: #53AB69;
+
+}
+
+.questionCount {
+  color: black;
+}
+
+button {
+  color: #5BB6E1;
+  padding: 10px 20px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: auto;
+  border-radius: 30px;
+
+}
+
+.nextButton{
+  background: #53AB69;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  font-size: 23px
+
+}
+
+.answerButton{
+  background: #53AB69;
+  color: white;
+  margin-top: 10px;
+  border-radius: 100%;
+
+
+}
+
+
+
+
+
+.flip-container.hover .flipper, .flip-container.flip .flipper {
+  transform: rotateY(180deg);
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 800px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
